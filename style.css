@@ -1,0 +1,46 @@
+body,
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fad0c4, #ff9a9e);
+    background-size: 400% 400%;
+    animation: gardient 15s ease infinite; */
+    /* font-family: "Arial", sans-serif; */
+    background-image: url(https://live.staticflickr.com/65535/52273760865_129bdae566_h.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 200px;
+}
+.text {
+    display: inline-block;
+}
+.text span {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+    margin-left: 3rem;
+    font-size: 5rem;
+    color: pink;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
